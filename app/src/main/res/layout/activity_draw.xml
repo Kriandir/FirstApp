@@ -3,20 +3,18 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="kriek.firstapp.Draw">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+    <TextView android:text="@string/itsadraw" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
-
+        android:textSize="45dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lets play ourselves a little game"
-        android:id="@+id/button1"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/tryagain"
+        android:id="@+id/draw"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>

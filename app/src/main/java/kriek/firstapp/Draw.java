@@ -8,18 +8,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Draw extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button button1 = (Button) findViewById(R.id.button1);
+        setContentView(R.layout.activity_draw);
+        Button draw = (Button) findViewById(R.id.draw);
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        draw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),rps.class));
+                startActivity(new Intent(getApplicationContext(), rps.class));
             }
 
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_draw, menu);
         return true;
     }
 
